@@ -28,13 +28,13 @@ export default function Navbar() {
         className="fixed top-0 inset-x-0 z-50 h-9 flex items-center justify-center px-4"
       >
         <a
-          href="tel:5550102000"
+          href="tel:5551234567"
           className="flex items-center gap-2 text-white text-xs sm:text-sm font-medium hover:text-red-300 transition-colors"
         >
           <Phone className="h-3.5 w-3.5" style={{ color: RED }} />
-          <span>Licensed Electrical Contractor · Springfield</span>
+          <span>Licensed Electrical Contractor · Serving Your Area</span>
           <span className="text-white/30">·</span>
-          <span>(555) 010-2000</span>
+          <span>(555) 123-4567</span>
         </a>
       </div>
 
@@ -47,12 +47,12 @@ export default function Navbar() {
           <Link to="/" className="flex items-center gap-3 flex-shrink-0">
             <img
               src="/logo.webp"
-              alt="CR Electric LLC"
+              alt="Voltline Electric Co."
               className="h-12 w-auto object-contain"
             />
             <div>
               <p className="font-extrabold text-gray-900 text-base leading-tight tracking-tight">
-                CR Electric LLC
+                Voltline Electric Co.
               </p>
               <p className="text-gray-500 text-[11px] sm:text-xs uppercase tracking-wider">
                 Licensed Electrical Contractor
@@ -80,11 +80,11 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="tel:5550102000"
+              href="tel:5551234567"
               className="flex items-center gap-1.5 text-gray-800 hover:text-black text-sm font-semibold transition-colors"
             >
               <Phone className="h-3.5 w-3.5" style={{ color: RED }} />
-              (555) 010-2000
+              (555) 123-4567
             </a>
             <button
               onClick={() => scrollTo("quote")}
@@ -122,12 +122,12 @@ export default function Navbar() {
               </button>
             ))}
             <a
-              href="tel:5550102000"
+              href="tel:5551234567"
               onClick={() => setMobileOpen(false)}
               className="flex items-center justify-center gap-2 mt-3 text-gray-800 py-3 border border-gray-200 rounded-lg font-semibold text-sm"
             >
               <Phone className="h-4 w-4" style={{ color: RED }} />
-              (555) 010-2000
+              (555) 123-4567
             </a>
             <button
               onClick={() => scrollTo("quote")}

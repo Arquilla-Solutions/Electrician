@@ -16,12 +16,12 @@ export default function Footer() {
               <div className="bg-white rounded-lg p-1.5 flex items-center justify-center shadow-sm">
                 <img
                   src="/logo.webp"
-                  alt="CR Electric LLC"
+                  alt="Voltline Electric Co."
                   className="h-10 w-auto object-contain"
                 />
               </div>
               <div>
-                <p className="font-extrabold text-base leading-tight">CR Electric LLC</p>
+                <p className="font-extrabold text-base leading-tight">Voltline Electric Co.</p>
                 <p className="text-white/50 text-[11px] uppercase tracking-wider">
                   Licensed Electrical Contractor
                 </p>
@@ -29,9 +29,9 @@ export default function Footer() {
             </div>
 
             <p className="text-white/55 text-sm leading-relaxed mb-5">
-              Master-electrician owned and locally operated in Springfield. We
-              do honest, code-compliant electrical work and stand behind every
-              install — from a single outlet to a full commercial fit-out.
+              Master-electrician owned and locally operated. We do honest,
+              code-compliant electrical work and stand behind every install —
+              from a single outlet to a full commercial fit-out.
             </p>
 
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5">
@@ -48,25 +48,25 @@ export default function Footer() {
             </p>
             <div className="flex flex-col gap-3 text-sm">
               <a
-                href="tel:5550102000"
+                href="tel:5551234567"
                 className="flex items-center gap-2.5 text-white/65 hover:text-white transition-colors"
               >
                 <Phone className="h-4 w-4 flex-shrink-0" style={{ color: RED }} />
-                (555) 010-2000
+                (555) 123-4567
               </a>
               <a
-                href="mailto:hello@crelectricllc.com"
+                href="mailto:hello@voltlineelectric.com"
                 className="flex items-center gap-2.5 text-white/65 hover:text-white transition-colors break-all"
               >
                 <Mail className="h-4 w-4 flex-shrink-0" style={{ color: RED }} />
-                hello@crelectricllc.com
+                hello@voltlineelectric.com
               </a>
               <div className="flex items-start gap-2.5 text-white/65">
                 <MapPin className="h-4 w-4 flex-shrink-0 mt-0.5" style={{ color: RED }} />
                 <span>
-                  123 Main Street
+                  Your City, USA
                   <br />
-                  Springfield, USA
+                  Serving the Local Area
                 </span>
               </div>
             </div>
@@ -129,15 +129,15 @@ export default function Footer() {
             className="text-center sm:text-left italic"
             style={{ color: "rgba(255,255,255,0.45)" }}
           >
-            Sample demo site. Final design and content will be customized for
-            your business.
+            Template demo site for electrical contractors. Final design,
+            branding and content will be customized for your business.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
             <p>
-              © {new Date().getFullYear()} CR Electric LLC · Licensed
+              © {new Date().getFullYear()} Voltline Electric Co. · Licensed
               Electrical Contractor
             </p>
-            <p>Master Electrician Owned · Serving Springfield &amp; Surrounding Areas</p>
+            <p>Master Electrician Owned · Serving Your Area &amp; Surrounding Towns</p>
           </div>
         </div>
       </div>

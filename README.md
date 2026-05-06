@@ -1,16 +1,20 @@
-# CR Electric LLC — Demo Site
+# Electrician Website Template — Voltline Electric Co.
 
-Sample demo site for **CR Electric LLC**, a licensed electrical contractor
-in Springfield. This is a polished sample built to show a prospective client
-what their finished site could look like.
+A polished, sample website template for licensed electrical contractors. Use
+this to show prospective clients what their finished site could look like —
+the design and structure are ready, just swap in their branding, copy and
+contact details.
 
-> Sample demo site. Final design and content will be customized for your
-> business.
+> Template demo site for electrical contractors. Final design, branding and
+> content will be customized for your business.
 
-- Owner: John Smith, Master Electrician
-- Phone: (555) 010-2000
-- Email: hello@crelectricllc.com
-- Address: 123 Main Street, Springfield
+Default placeholder details used across the template:
+
+- Brand: Voltline Electric Co.
+- Owner: Master Electrician (generic placeholder)
+- Phone: (555) 123-4567
+- Email: hello@voltlineelectric.com
+- Location: Your City, USA
 
 ## Stack
 
@@ -47,6 +51,18 @@ src/
   index.css     # design tokens + animations
   App.tsx       # routes
 ```
+
+## Customizing the template for a client
+
+When pitching this to a real electrical contractor, replace the placeholders:
+
+- Brand name `Voltline Electric Co.` (Navbar, Footer, Index, ContactForm, index.html)
+- Phone `(555) 123-4567` and `tel:5551234567`
+- Email `hello@voltlineelectric.com`
+- Service area copy (currently "Your Area" / generic neighborhood names)
+- `/public/logo.webp` — swap in the client's logo
+- Replace the sample testimonial with real customer reviews
+- Update structured data (`<script type="application/ld+json">`) in `index.html`
 
 ## TODOs before launch
 

@@ -95,7 +95,7 @@ const whyUs = [
   {
     icon: Award,
     title: "Master Electrician Owned",
-    desc: "Owned and run by John Smith — every job is supervised by a licensed master electrician.",
+    desc: "Owned and run by a master electrician — every job is supervised by a licensed pro.",
   },
   {
     icon: ShieldCheck,
@@ -120,19 +120,19 @@ const whyUs = [
   {
     icon: Heart,
     title: "Locally Owned",
-    desc: "Springfield-based and proud of it — accountable to the neighbors we serve.",
+    desc: "Locally owned and proud of it — accountable to the neighbors we serve.",
   },
 ];
 
 const areas = [
-  "Springfield",
+  "Downtown",
+  "Northside",
+  "Southside",
+  "Eastside",
+  "Westside",
   "Riverside",
-  "Lakeside",
+  "Lakeview",
   "Oakwood",
-  "Westfield",
-  "Northbrook",
-  "Glenwood",
-  "Fairview",
   "Maplewood",
   "Hillcrest",
 ];
@@ -140,11 +140,11 @@ const areas = [
 const faqs = [
   {
     q: "How fast can you come out for an electrical emergency?",
-    a: "We offer same-day response for true electrical emergencies — no power, burning smell, sparking outlets, or tripped mains we can't reset. Call (555) 010-2000 and we'll dispatch the next available licensed electrician. For non-urgent work we can usually be on-site within 24–48 hours.",
+    a: "We offer same-day response for true electrical emergencies — no power, burning smell, sparking outlets, or tripped mains we can't reset. Call (555) 123-4567 and we'll dispatch the next available licensed electrician. For non-urgent work we can usually be on-site within 24–48 hours.",
   },
   {
     q: "Are you licensed and insured?",
-    a: "Yes. CR Electric LLC is a fully licensed electrical contractor, bonded, and carries general liability and workers' comp insurance. Every job is performed or directly supervised by a master electrician, and we'll happily provide proof of license and insurance on request.",
+    a: "Yes. Voltline Electric Co. is a fully licensed electrical contractor, bonded, and carries general liability and workers' comp insurance. Every job is performed or directly supervised by a master electrician, and we'll happily provide proof of license and insurance on request.",
   },
   {
     q: "Do you offer free estimates?",
@@ -202,7 +202,7 @@ export default function Index() {
                 style={{ background: RED, color: "white", animationDelay: "0ms" }}
               >
                 <ShieldCheck className="h-3.5 w-3.5" />
-                Licensed Electrical Contractor · Springfield
+                Licensed Electrical Contractor · Serving Your Area
               </div>
 
               <h1
@@ -219,9 +219,9 @@ export default function Index() {
                 style={{ animationDelay: "240ms" }}
               >
                 Master-electrician-owned, fully licensed and insured. From panel
-                upgrades and EV chargers to full commercial wiring, John Smith
-                and the CR Electric crew show up on time, work to code, and leave
-                your power safer than we found it.
+                upgrades and EV chargers to full commercial wiring, our crew
+                shows up on time, works to code, and leaves your power safer
+                than we found it.
               </p>
 
               <div
@@ -254,11 +254,11 @@ export default function Index() {
                   <ArrowRight className="h-5 w-5" />
                 </button>
                 <a
-                  href="tel:5550102000"
+                  href="tel:5551234567"
                   className="inline-flex items-center gap-2.5 text-white border border-white/25 hover:border-white/60 hover:bg-white/5 px-7 py-4 rounded-lg font-semibold text-base transition-all"
                 >
                   <Phone className="h-5 w-5" style={{ color: RED }} />
-                  (555) 010-2000
+                  (555) 123-4567
                 </a>
               </div>
             </div>
@@ -310,7 +310,7 @@ export default function Index() {
                 style={{ background: BLUSH, color: RED_DARK }}
               >
                 <Heart className="h-3.5 w-3.5" />
-                Meet CR Electric
+                Meet Voltline Electric
               </div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
                 Master-electrician work,
@@ -318,10 +318,10 @@ export default function Index() {
                 done <span style={{ color: RED }}>the right way.</span>
               </h2>
               <p className="text-gray-600 text-base leading-relaxed mb-4">
-                CR Electric LLC is owned and operated by{" "}
-                <strong className="text-gray-900">John Smith</strong>, a master
-                electrician with two decades behind the panel. He started
-                CR Electric because he was tired of seeing rushed, half-done
+                Voltline Electric Co. is{" "}
+                <strong className="text-gray-900">master-electrician owned</strong>{" "}
+                and operated, with two decades behind the panel. We started
+                Voltline because we were tired of seeing rushed, half-done
                 electrical work in homes and businesses that deserved better.
               </p>
               <p className="text-gray-600 text-base leading-relaxed mb-7">
@@ -333,7 +333,7 @@ export default function Index() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-8">
                 {[
                   "Master electrician owned",
-                  "Based in Springfield",
+                  "Locally owned & operated",
                   "Residential & commercial",
                   "Free, on-site quotes",
                   "Permits & inspections handled",
@@ -375,7 +375,7 @@ export default function Index() {
                     <div className="bg-white rounded-2xl px-6 py-5 mx-auto mb-6 shadow-2xl animate-float inline-block">
                       <img
                         src="/logo.webp"
-                        alt="CR Electric LLC"
+                        alt="Voltline Electric Co."
                         className="h-32 w-auto object-contain"
                       />
                     </div>
@@ -387,7 +387,7 @@ export default function Index() {
                       "If it's not safe, it's not finished."
                     </p>
                     <p className="text-white/50 text-xs mt-2">
-                      — John Smith, Master Electrician
+                      — Master Electrician, Owner
                     </p>
                   </div>
                 </div>
@@ -590,7 +590,7 @@ export default function Index() {
                 Why Choose Us
               </div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900">
-                Why people pick <span style={{ color: RED }}>CR Electric</span>
+                Why people pick <span style={{ color: RED }}>Voltline Electric</span>
               </h2>
             </div>
           </Reveal>
@@ -633,7 +633,7 @@ export default function Index() {
                 ))}
               </div>
               <p className="text-gray-500 text-sm font-semibold">
-                Sample Customer · Springfield
+                Sample Customer · Local Area
               </p>
               <p className="text-gray-400 text-xs mt-1 italic">
                 Sample testimonial — replace with real reviews
@@ -666,11 +666,11 @@ export default function Index() {
               Service Area
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4">
-              Serving Springfield &amp; Surrounding Areas
+              Serving Your Area &amp; Surrounding Towns
             </h2>
             <p className="text-white/55 text-base mb-10 max-w-xl mx-auto">
-              Based in Springfield — covering Riverside, Lakeside, Oakwood,
-              Westfield and beyond. Don't see your town? Call us anyway.
+              Local, licensed and ready to roll — covering downtown,
+              the suburbs and beyond. Don't see your town? Call us anyway.
             </p>
           </Reveal>
 
@@ -776,22 +776,22 @@ export default function Index() {
                   <ArrowRight className="h-5 w-5" />
                 </button>
                 <a
-                  href="tel:5550102000"
+                  href="tel:5551234567"
                   className="inline-flex items-center justify-center gap-2 text-white border border-white/25 hover:border-white/60 hover:bg-white/5 px-8 py-4 rounded-lg font-semibold transition-all"
                 >
                   <Phone className="h-5 w-5" style={{ color: RED }} />
-                  (555) 010-2000
+                  (555) 123-4567
                 </a>
               </div>
               <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-7 text-white/45 text-xs">
                 <a
-                  href="mailto:hello@crelectricllc.com"
+                  href="mailto:hello@voltlineelectric.com"
                   className="flex items-center gap-1.5 hover:text-white"
                 >
-                  <Mail className="h-3.5 w-3.5" /> hello@crelectricllc.com
+                  <Mail className="h-3.5 w-3.5" /> hello@voltlineelectric.com
                 </a>
                 <span className="flex items-center gap-1.5">
-                  <MapPin className="h-3.5 w-3.5" /> 123 Main Street, Springfield
+                  <MapPin className="h-3.5 w-3.5" /> Serving Your City &amp; Surrounding Areas
                 </span>
               </div>
             </div>

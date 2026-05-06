@@ -68,7 +68,7 @@ export default function ContactForm() {
           </div>
 
           {[
-            { label: "Full Name", key: "name", type: "text", placeholder: "John Smith" },
+            { label: "Full Name", key: "name", type: "text", placeholder: "Your Name" },
             { label: "Phone Number", key: "phone", type: "tel", placeholder: "(555) 000-0000" },
             { label: "Email", key: "email", type: "email", placeholder: "you@example.com" },
           ].map(({ label, key, type, placeholder }) => (
@@ -113,7 +113,7 @@ export default function ContactForm() {
             />
             <span className="text-gray-500 text-xs leading-relaxed">
               I agree to receive automated text messages from{" "}
-              <strong className="text-gray-700">CR Electric LLC</strong> at
+              <strong className="text-gray-700">Voltline Electric Co.</strong> at
               the number provided. Message and data rates may apply. Reply STOP
               to opt out, HELP for help.
             </span>
