@@ -1,25 +1,24 @@
 import { Phone, Mail, MapPin, ShieldCheck } from "lucide-react";
 
-const BLACK = "#0a0a0a";
-const RED = "#dc2626";
+const NAVY = "#0f172a";
+const BLUE = "#1d4ed8";
+const YELLOW = "#facc15";
 
 export default function Footer() {
   const scrollTo = (id: string) =>
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <footer style={{ background: BLACK }} className="text-white pt-16 pb-8">
+    <footer style={{ background: NAVY }} className="text-white pt-14 sm:pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 pb-10 border-b border-white/10">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
-              <div className="bg-white rounded-lg p-1.5 flex items-center justify-center shadow-sm">
-                <img
-                  src="/logo.webp"
-                  alt="Your business logo"
-                  className="h-10 w-auto object-contain"
-                />
-              </div>
+              <img
+                src="/logo-mark.svg"
+                alt="Your business logo"
+                className="h-12 w-12 object-contain"
+              />
               <div>
                 <p className="font-extrabold text-base leading-tight">[Your Business Name]</p>
                 <p className="text-white/50 text-[11px] uppercase tracking-wider">
@@ -35,7 +34,7 @@ export default function Footer() {
             </p>
 
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5">
-              <ShieldCheck className="h-3.5 w-3.5" style={{ color: RED }} />
+              <ShieldCheck className="h-3.5 w-3.5" style={{ color: YELLOW }} />
               <span className="text-white/80 text-xs font-semibold">
                 Licensed · Bonded · Insured
               </span>
@@ -51,18 +50,18 @@ export default function Footer() {
                 href="tel:5551234567"
                 className="flex items-center gap-2.5 text-white/65 hover:text-white transition-colors"
               >
-                <Phone className="h-4 w-4 flex-shrink-0" style={{ color: RED }} />
+                <Phone className="h-4 w-4 flex-shrink-0" style={{ color: YELLOW }} />
                 (555) 123-4567
               </a>
               <a
                 href="mailto:hello@yourcompany.com"
                 className="flex items-center gap-2.5 text-white/65 hover:text-white transition-colors break-all"
               >
-                <Mail className="h-4 w-4 flex-shrink-0" style={{ color: RED }} />
+                <Mail className="h-4 w-4 flex-shrink-0" style={{ color: YELLOW }} />
                 hello@yourcompany.com
               </a>
               <div className="flex items-start gap-2.5 text-white/65">
-                <MapPin className="h-4 w-4 flex-shrink-0 mt-0.5" style={{ color: RED }} />
+                <MapPin className="h-4 w-4 flex-shrink-0 mt-0.5" style={{ color: YELLOW }} />
                 <span>
                   Your City, USA
                   <br />
@@ -79,11 +78,14 @@ export default function Footer() {
             <div className="flex flex-col gap-2 text-sm">
               {[
                 "Panel Upgrades & Replacements",
-                "Lighting Installation",
+                "Lighting Installation & Design",
                 "Outlets, Switches & Wiring",
                 "EV Charger Installation",
-                "Generator Installation",
-                "Commercial Wiring",
+                "Standby Generator Installation",
+                "Whole-Home Surge Protection",
+                "Ceiling Fans & Smart Devices",
+                "Commercial & Tenant Build-Outs",
+                "Troubleshooting & Repairs",
               ].map((s, i) => (
                 <button
                   key={i}
@@ -103,8 +105,8 @@ export default function Footer() {
             <div
               className="p-5 rounded-xl border"
               style={{
-                background: "rgba(220,38,38,0.10)",
-                borderColor: "rgba(220,38,38,0.30)",
+                background: "rgba(29,78,216,0.15)",
+                borderColor: "rgba(250,204,21,0.30)",
               }}
             >
               <p className="text-white font-semibold text-sm mb-1">
@@ -115,7 +117,7 @@ export default function Footer() {
               </p>
               <button
                 onClick={() => scrollTo("quote")}
-                style={{ background: RED, color: "white" }}
+                style={{ background: BLUE, color: "white" }}
                 className="w-full py-2.5 rounded-lg text-sm font-extrabold hover:brightness-110 transition-all shadow"
               >
                 Get a Free Quote
@@ -132,7 +134,7 @@ export default function Footer() {
             Template demo site for electrical contractors. Final design,
             branding and content will be customized for your business.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
             <p>
               © {new Date().getFullYear()} [Your Business Name] · Licensed
               Electrical Contractor

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Logo mark">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="bolt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="96" height="96" rx="20" fill="url(#bg)"/>
+  <rect x="6" y="6" width="84" height="84" rx="15" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M55 14 L26 56 H44 L38 84 L70 38 H52 Z"
+        fill="url(#bolt)"
+        stroke="#0f172a"
+        stroke-width="2"
+        stroke-linejoin="round"/>
+</svg>

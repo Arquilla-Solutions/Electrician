@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 
-const RED = "#dc2626";
-const BLACK = "#0a0a0a";
+const BLUE = "#1d4ed8";
+const YELLOW = "#facc15";
+const NAVY = "#0f172a";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -24,17 +25,18 @@ export default function Navbar() {
   return (
     <>
       <div
-        style={{ background: BLACK }}
-        className="fixed top-0 inset-x-0 z-50 h-9 flex items-center justify-center px-4"
+        style={{ background: NAVY }}
+        className="fixed top-0 inset-x-0 z-50 h-9 flex items-center justify-center px-3"
       >
         <a
           href="tel:5551234567"
-          className="flex items-center gap-2 text-white text-xs sm:text-sm font-medium hover:text-red-300 transition-colors"
+          className="flex items-center gap-1.5 sm:gap-2 text-white text-[11px] sm:text-sm font-medium hover:text-yellow-300 transition-colors min-w-0"
         >
-          <Phone className="h-3.5 w-3.5" style={{ color: RED }} />
-          <span>Licensed Electrical Contractor · Serving Your Area</span>
-          <span className="text-white/30">·</span>
-          <span>(555) 123-4567</span>
+          <Phone className="h-3.5 w-3.5 flex-shrink-0" style={{ color: YELLOW }} />
+          <span className="hidden sm:inline truncate">Licensed Electrical Contractor · Serving Your Area</span>
+          <span className="sm:hidden truncate">Licensed Electrical Contractor</span>
+          <span className="text-white/30 hidden sm:inline">·</span>
+          <span className="whitespace-nowrap">(555) 123-4567</span>
         </a>
       </div>
 
@@ -43,18 +45,18 @@ export default function Navbar() {
           scrolled ? "shadow-md border-gray-200" : "border-gray-100"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-[76px] flex items-center justify-between gap-4">
-          <Link to="/" className="flex items-center gap-3 flex-shrink-0">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 h-[68px] sm:h-[76px] flex items-center justify-between gap-3">
+          <Link to="/" className="flex items-center gap-2 sm:gap-3 flex-shrink-0 min-w-0">
             <img
-              src="/logo.webp"
+              src="/logo-mark.svg"
               alt="Your business logo"
-              className="h-12 w-auto object-contain"
+              className="h-9 sm:h-12 w-9 sm:w-12 object-contain flex-shrink-0"
             />
-            <div>
-              <p className="font-extrabold text-gray-900 text-base leading-tight tracking-tight">
+            <div className="min-w-0">
+              <p className="font-extrabold text-gray-900 text-sm sm:text-base leading-tight tracking-tight truncate">
                 [Your Business Name]
               </p>
-              <p className="text-gray-500 text-[11px] sm:text-xs uppercase tracking-wider">
+              <p className="text-gray-500 text-[10px] sm:text-xs uppercase tracking-wider truncate">
                 Licensed Electrical Contractor
               </p>
             </div>
@@ -71,7 +73,7 @@ export default function Navbar() {
               <button
                 key={id}
                 onClick={() => scrollTo(id)}
-                className="text-gray-700 hover:text-gray-900 font-medium text-sm px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors"
+                className="text-gray-700 hover:text-gray-900 font-medium text-sm px-3 py-2 rounded-lg hover:bg-blue-50 transition-colors"
               >
                 {label}
               </button>
@@ -83,12 +85,12 @@ export default function Navbar() {
               href="tel:5551234567"
               className="flex items-center gap-1.5 text-gray-800 hover:text-black text-sm font-semibold transition-colors"
             >
-              <Phone className="h-3.5 w-3.5" style={{ color: RED }} />
+              <Phone className="h-3.5 w-3.5" style={{ color: BLUE }} />
               (555) 123-4567
             </a>
             <button
               onClick={() => scrollTo("quote")}
-              style={{ background: RED, color: "white" }}
+              style={{ background: BLUE, color: "white" }}
               className="px-5 py-2.5 rounded-lg font-bold text-sm hover:brightness-110 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
             >
               Free Quote
@@ -96,11 +98,11 @@ export default function Navbar() {
           </div>
 
           <button
-            className="md:hidden p-2 text-gray-700 hover:text-gray-900 transition-colors"
+            className="md:hidden p-2 -mr-1 text-gray-700 hover:text-gray-900 transition-colors flex-shrink-0"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
-            {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
 
@@ -126,12 +128,12 @@ export default function Navbar() {
               onClick={() => setMobileOpen(false)}
               className="flex items-center justify-center gap-2 mt-3 text-gray-800 py-3 border border-gray-200 rounded-lg font-semibold text-sm"
             >
-              <Phone className="h-4 w-4" style={{ color: RED }} />
+              <Phone className="h-4 w-4" style={{ color: BLUE }} />
               (555) 123-4567
             </a>
             <button
               onClick={() => scrollTo("quote")}
-              style={{ background: RED, color: "white" }}
+              style={{ background: BLUE, color: "white" }}
               className="mt-2 py-3.5 rounded-lg font-extrabold text-sm shadow-md"
             >
               Get a Free Quote
