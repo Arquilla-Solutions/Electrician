@@ -1,20 +1,21 @@
-# Electrician Website Template — Voltline Electric Co.
+# Electrician Website Template — White Label
 
-A polished, sample website template for licensed electrical contractors. Use
-this to show prospective clients what their finished site could look like —
-the design and structure are ready, just swap in their branding, copy and
-contact details.
+A polished, fully white-labeled website template for licensed electrical
+contractors. Use this to show prospective clients what their finished site
+could look like — the design, structure and copy are ready to drop their
+branding into.
 
 > Template demo site for electrical contractors. Final design, branding and
 > content will be customized for your business.
 
-Default placeholder details used across the template:
+White-label placeholders used throughout:
 
-- Brand: Voltline Electric Co.
-- Owner: Master Electrician (generic placeholder)
-- Phone: (555) 123-4567
-- Email: hello@voltlineelectric.com
-- Location: Your City, USA
+- Brand: `[Your Business Name]`
+- Phone: `(555) 123-4567` (link: `tel:5551234567`)
+- Email: `hello@yourcompany.com`
+- Location: "Your Area" / "Your City, USA"
+- Logo: `/public/logo.webp` (generic placeholder)
+- Owner: described only as "master electrician / owner"
 
 ## Stack
 
@@ -52,14 +53,14 @@ src/
   App.tsx       # routes
 ```
 
-## Customizing the template for a client
+## Customizing for a client
 
 When pitching this to a real electrical contractor, replace the placeholders:
 
-- Brand name `Voltline Electric Co.` (Navbar, Footer, Index, ContactForm, index.html)
+- `[Your Business Name]` (Navbar, Footer, Index, ContactForm, index.html structured data)
 - Phone `(555) 123-4567` and `tel:5551234567`
-- Email `hello@voltlineelectric.com`
-- Service area copy (currently "Your Area" / generic neighborhood names)
+- Email `hello@yourcompany.com`
+- Service-area copy (currently neutral neighborhood labels) and city references
 - `/public/logo.webp` — swap in the client's logo
 - Replace the sample testimonial with real customer reviews
 - Update structured data (`<script type="application/ld+json">`) in `index.html`

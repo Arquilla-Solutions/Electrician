@@ -144,7 +144,7 @@ const faqs = [
   },
   {
     q: "Are you licensed and insured?",
-    a: "Yes. Voltline Electric Co. is a fully licensed electrical contractor, bonded, and carries general liability and workers' comp insurance. Every job is performed or directly supervised by a master electrician, and we'll happily provide proof of license and insurance on request.",
+    a: "Yes. We are a fully licensed electrical contractor, bonded, and carry general liability and workers' comp insurance. Every job is performed or directly supervised by a master electrician, and we'll happily provide proof of license and insurance on request.",
   },
   {
     q: "Do you offer free estimates?",
@@ -310,7 +310,7 @@ export default function Index() {
                 style={{ background: BLUSH, color: RED_DARK }}
               >
                 <Heart className="h-3.5 w-3.5" />
-                Meet Voltline Electric
+                Meet Your Local Electrician
               </div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
                 Master-electrician work,
@@ -318,11 +318,12 @@ export default function Index() {
                 done <span style={{ color: RED }}>the right way.</span>
               </h2>
               <p className="text-gray-600 text-base leading-relaxed mb-4">
-                Voltline Electric Co. is{" "}
+                We're a{" "}
                 <strong className="text-gray-900">master-electrician owned</strong>{" "}
-                and operated, with two decades behind the panel. We started
-                Voltline because we were tired of seeing rushed, half-done
-                electrical work in homes and businesses that deserved better.
+                and operated shop, with two decades behind the panel. We
+                started this company because we were tired of seeing rushed,
+                half-done electrical work in homes and businesses that
+                deserved better.
               </p>
               <p className="text-gray-600 text-base leading-relaxed mb-7">
                 Whether it's a 200-amp service upgrade, a Level 2 EV charger, or
@@ -375,7 +376,7 @@ export default function Index() {
                     <div className="bg-white rounded-2xl px-6 py-5 mx-auto mb-6 shadow-2xl animate-float inline-block">
                       <img
                         src="/logo.webp"
-                        alt="Voltline Electric Co."
+                        alt="Your business logo"
                         className="h-32 w-auto object-contain"
                       />
                     </div>
@@ -590,7 +591,7 @@ export default function Index() {
                 Why Choose Us
               </div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900">
-                Why people pick <span style={{ color: RED }}>Voltline Electric</span>
+                Why people pick <span style={{ color: RED }}>your local pros</span>
               </h2>
             </div>
           </Reveal>
@@ -785,10 +786,10 @@ export default function Index() {
               </div>
               <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-7 text-white/45 text-xs">
                 <a
-                  href="mailto:hello@voltlineelectric.com"
+                  href="mailto:hello@yourcompany.com"
                   className="flex items-center gap-1.5 hover:text-white"
                 >
-                  <Mail className="h-3.5 w-3.5" /> hello@voltlineelectric.com
+                  <Mail className="h-3.5 w-3.5" /> hello@yourcompany.com
                 </a>
                 <span className="flex items-center gap-1.5">
                   <MapPin className="h-3.5 w-3.5" /> Serving Your City &amp; Surrounding Areas

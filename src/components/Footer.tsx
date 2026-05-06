@@ -16,12 +16,12 @@ export default function Footer() {
               <div className="bg-white rounded-lg p-1.5 flex items-center justify-center shadow-sm">
                 <img
                   src="/logo.webp"
-                  alt="Voltline Electric Co."
+                  alt="Your business logo"
                   className="h-10 w-auto object-contain"
                 />
               </div>
               <div>
-                <p className="font-extrabold text-base leading-tight">Voltline Electric Co.</p>
+                <p className="font-extrabold text-base leading-tight">[Your Business Name]</p>
                 <p className="text-white/50 text-[11px] uppercase tracking-wider">
                   Licensed Electrical Contractor
                 </p>
@@ -55,11 +55,11 @@ export default function Footer() {
                 (555) 123-4567
               </a>
               <a
-                href="mailto:hello@voltlineelectric.com"
+                href="mailto:hello@yourcompany.com"
                 className="flex items-center gap-2.5 text-white/65 hover:text-white transition-colors break-all"
               >
                 <Mail className="h-4 w-4 flex-shrink-0" style={{ color: RED }} />
-                hello@voltlineelectric.com
+                hello@yourcompany.com
               </a>
               <div className="flex items-start gap-2.5 text-white/65">
                 <MapPin className="h-4 w-4 flex-shrink-0 mt-0.5" style={{ color: RED }} />
@@ -134,7 +134,7 @@ export default function Footer() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
             <p>
-              © {new Date().getFullYear()} Voltline Electric Co. · Licensed
+              © {new Date().getFullYear()} [Your Business Name] · Licensed
               Electrical Contractor
             </p>
             <p>Master Electrician Owned · Serving Your Area &amp; Surrounding Towns</p>

@@ -47,12 +47,12 @@ export default function Navbar() {
           <Link to="/" className="flex items-center gap-3 flex-shrink-0">
             <img
               src="/logo.webp"
-              alt="Voltline Electric Co."
+              alt="Your business logo"
               className="h-12 w-auto object-contain"
             />
             <div>
               <p className="font-extrabold text-gray-900 text-base leading-tight tracking-tight">
-                Voltline Electric Co.
+                [Your Business Name]
               </p>
               <p className="text-gray-500 text-[11px] sm:text-xs uppercase tracking-wider">
                 Licensed Electrical Contractor
